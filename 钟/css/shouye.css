@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #B4D8F2;
+}
+
+main{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+nav{
+    width: 100%;
+}
+
+nav li{
+    width: 25%;
+    float: left;
+    background-color: #FFC0CB;
+    text-align: center;
+}
+
+nav li a{
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 18px;
+}
+
+nav li a:hover{
+    background-color: #FFB6C1;
+    cursor: pointer;
+}
+
+footer{
+    background-color:#FFC0CB ;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px auto;
+}
+
+.title span{
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.title hr{
+    width: 220px;
+    height: 2px;
+    border: none;
+    background-color: black;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+    border: 1px solid white;
+    margin: 10px;
+}
+.info img{
+    width:20%;
+    height: 360px;
+}
+
+.info .info-text{
+    width: 55%;
+}
+
+.info .info-text .info-title{
+    background-color:#FFB6C1;
+    padding: 8px 12px;
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.info .info-text .info-p{
+    font-size: 18px;
+    line-height: 35px;
+    text-indent:20em;
+}
+.info .info-p .info-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.info .info-p .info-table td{
+    border: 1px solid #FFB6C1;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.imglist{
+    width: 100%;
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.imglist img{
+    width: 20%;
+}
+
+.guanyuContainer{
+    padding: 8px 12px;
+    width: 100%;
+}
+
+.guanyuContainer .guanyuItem{
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.guanyuContainer .guanyuItem img{
+    width: 240px;
+    margin-right: 12px;
+}
+
+.guanyuContainer .guanyuItem .guanyu-text{
+    padding: 8px;
+}
+
+.guanyuContainer .guanyuItem .guanyu-text .guanyu-title{
+    margin-bottom: 15px;
+    background-color: #FFB6C1;
+    width: 120px;
+    text-align: center;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+.guanyuContainer .guanyuItem .guanyu-text .guanyu-p{
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.skill-section{
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: "微软雅黑", sans-serif;
+}
+
+.skill-section h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFB6C1;
+}
+
+.skill-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.skill-item span{
+    width: 120px;
+    font-size: 16px;
+    color:#555;
+}
+
+.skill-bar{
+    flex: 1;
+    height: 16px;
+    margin: 0 10px;
+    background-color: white; 
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar .progress{
+    height: 100%;
+    background-color:white; 
+    border-radius: 8px;
+    width: 0;
+    transition:width 1s ease,background-color 0.5s ease;
+}
+
+.skill-bar[data-percent="60%"] .progress { --target-width: 60%; }
+.skill-bar[data-percent="80%"] .progress { --target-width: 80%; }
+.skill-bar[data-percent="50%"] .progress { --target-width: 50%; }
+.skill-bar[data-percent="30%"] .progress { --target-width: 30%; }
+.skill-bar[data-percent="20%"] .progress { --target-width: 20%; }
+
+.skill-bar:hover .progress {
+  width: var(--target-width); 
+  background-color: #FFB6C1; 
+}
+
+.skill-percent {
+  font-size: 14px;
+  color: #666; 
+}
+
+.liuyan{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 18px;
+}
+
+.liuyan form{
+    width: 64%;
+}
+
+.liuyan img{
+    width: 33%;
+}
+
+.liuyan .input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.liuyan .liuyan-title{
+    margin-bottom: 15px;
+    background-color: #FFB6C1;
+    width: 120px;
+    text-align: center;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+.liuyan .input-group input{
+    margin-bottom: 12px;
+    height: 36px;
+    border: #707070 1px solid;
+    border-radius: 2px;
+    outline: none;
+}
+
+.liuyan .input-group textarea{
+    width: 100%;
+    height: 120px;
+}
+
+.liuyan button{
+    margin-top: 15px;
+    background-color: #FFB6C1;
+    width: 180px;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    font-size: 20px;
+}
+
+.liuyan button:hover{
+    background-color: #FFC0CB;
+    cursor: pointer;
+}
+
+.liuyan input{
+    padding-left: 12px;
+}
+
+.liuyan textarea{
+    outline:none ;
+    padding-left: 12px;
+    padding-top: 8px;
+}
